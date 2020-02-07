@@ -170,14 +170,17 @@ input[type="radio"].visually-hidden {
 
 /* normalize ends */
 
+@import url("https://fonts.googleapis.com/css?family=Quicksand&subset=latin&display=swap");
+
 :root {
   --transition: 0.4s cubic-bezier(1, -1, 0, 2);
   --mobile-width: 414px;
   --tablet-width: 768px;
   --desktop-width: 1024px;
+  --header-height: 100px;
 
   box-sizing: border-box;
-  font-family: Sentinel SSm A, Sentinel SSm B, system-ui, Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-family: 'Quicksand', system-ui, Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
   font-size: 10px;
   line-height: 20px;
   scroll-behavior: smooth;
@@ -240,17 +243,27 @@ input[type="radio"].visually-hidden {
   top: 0;
   left: 0;
   z-index: 1;
+  display: grid;
   width: 100%;
-  height: 70px;
+  height: var(--header-height);
   color: var(--default-color);
   background: var(--background-color);
   background: var(--background-element-gradient);
 }
 
 .logo {
+  width: 70%;
+  padding: 1rem;
+  font-family: 'Monoton', cursive;
   font-size: 4rem;
+  line-height: 4rem;
   color: var(--default-color);
   text-decoration: none;
+  place-self: center start;
+}
+
+.navigation {
+  display: none;
 }
 
 .container {
@@ -259,21 +272,22 @@ input[type="radio"].visually-hidden {
 }
 
 .meet {
-  padding: 15% 0;
   display: grid;
-  align-items: center;
-  justify-items: center;
+  grid-template-rows: 400px 100px 40px;
+  grid-template-columns: 1fr;
   height: 90vh;
+  padding-top: calc(var(--header-height) + 1rem);
 }
 
 .meet__title {
-  margin: 0;
   padding: 0 1rem;
+  margin: 0;
   font-size: 3.5rem;
-  place-self: end center;
+  place-self: center center;
 }
 
 .meet__paragraph {
+  margin: 0;
   font-size: 2rem;
   color: var(--danger-color);
   place-self: start center;
@@ -281,11 +295,11 @@ input[type="radio"].visually-hidden {
 
 .avatar__wrapper {
   filter: drop-shadow(0 20px 20px #000000);
+  place-self: center center;
 }
 
 .avatar__photo {
   width: 300px;
   height: 300px;
   clip-path: circle(50% at 50% 50%);
-  place-self: end center;
 }
