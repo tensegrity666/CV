@@ -179,6 +179,7 @@ input[type="radio"].visually-hidden {
   --tablet-width: 768px;
   --desktop-width: 1024px;
   --header-height: 100px;
+  --section-margin: 5rem;
 
   box-sizing: border-box;
   font-family: 'Quicksand', system-ui, Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
@@ -202,7 +203,7 @@ input[type="radio"].visually-hidden {
   --background-element-gradient: linear-gradient(to right, #1b1035 20%, #76b767 55%, rgba(215, 203, 157, 0.7) 90%);
   --background-color: #1b1035;
   --default-color: #ffffff;
-  --primary-color: #d7cb9d;
+  --primary-color: #e4dbb6;
   --info-color: #689a74;
   --succes-color: #76b767;
 }
@@ -210,7 +211,7 @@ input[type="radio"].visually-hidden {
 .theme_dark {
   --background-main-gradient: linear-gradient(to right, #1b1035 30%, #649173 110%);
   --background-element-gradient: linear-gradient(to right, rgba(215, 203, 157, 0.6) 0%, #1b1035 90%);
-  --background-color: #d7cb9d;
+  --background-color: #e4dbb6;
   --default-color: #ffffff;
   --primary-color: #1b1035;
   --info-color: #689a74;
@@ -250,6 +251,8 @@ input[type="radio"].visually-hidden {
   color: var(--default-color);
   background: var(--background-color);
   background: var(--background-element-gradient);
+  backdrop-filter: blur(5px) opacity(0.5);
+  box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -277,7 +280,7 @@ input[type="radio"].visually-hidden {
   display: grid;
   grid-template-rows: 400px 100px 40px;
   grid-template-columns: 1fr;
-  height: 90vh;
+  min-height: 90vh;
   padding-top: calc(var(--header-height) + 1rem);
 }
 
@@ -318,4 +321,26 @@ input[type="radio"].visually-hidden {
   width: 300px;
   height: 300px;
   clip-path: circle(50% at 50% 50%);
+}
+
+.about {
+  min-height: 60vh;
+  margin: 0;
+  margin-bottom: var(--section-margin);
+}
+
+.about__title {
+  padding: 0 1rem;
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 5rem;
+  text-align: start;
+}
+
+.about__paragraph {
+  padding: 0 1rem;
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  text-align: justify;
 }
