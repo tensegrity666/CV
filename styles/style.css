@@ -198,7 +198,7 @@ input[type="radio"].visually-hidden {
 
 .theme_light {
   --background-main-gradient: linear-gradient(to right, #dbd5a4 30%, #649173 110%);
-  --background-element-gradient: linear-gradient(to right, #1b1035 20%, #76b767 55%, rgba(215, 203, 157, 0.7) 90%);
+  --background-element-gradient: linear-gradient(to right, #1b1035 20%, rgba(118, 183, 103, 0.6) 55%, rgba(215, 203, 157, 0.9) 90%);
   --background-color: #1b1035;
   --default-color: #ffffff;
   --primary-color: #e4dbb6;
@@ -296,7 +296,6 @@ input[type="radio"].visually-hidden {
   font-size: 2rem;
   color: var(--danger-color);
   place-self: start center;
-  text-shadow: 0 0 10px #000000;
   transition: var(--transition-out);
 }
 
@@ -311,7 +310,7 @@ input[type="radio"].visually-hidden {
 }
 
 .avatar__wrapper {
-  filter: drop-shadow(0 20px 20px #000000);
+  filter: drop-shadow(10px 10px 25px rgba(0, 0, 0, 0.7));
   place-self: center center;
 }
 
@@ -357,14 +356,15 @@ input[type="radio"].visually-hidden {
   width: 100%;
   height: 6.4rem;
   color: var(--default-color);
+  background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(7px) opacity(0.5);
-  box-shadow: inset 0 3px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
 .footer__link {
   padding: 0 0 0 8rem;
   color: var(--default-color);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .contacts__link_twitter::before {
