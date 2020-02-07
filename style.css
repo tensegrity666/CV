@@ -175,6 +175,35 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
 }
 
+.theme {
+  --warning-color: #f3a72f;
+  --danger-color: #f44336;
+
+  color: var(--background-color);
+  background: var(--info-color);
+  background: var(--background-main-gradient);
+  border-color: var(--background-color);
+}
+
+.theme_light {
+  --background-main-gradient: linear-gradient(to right, #dbd5a4 30%, #649173 110%);
+  --background-element-gradient: linear-gradient(to right, #1b1035 0%, #76b767 55%, rgba(215, 203, 157, 0.6) 90%);
+  --background-color: #1b1035;
+  --default-color: #ffffff;
+  --primary-color: #d7cb9d;
+  --info-color: #689a74;
+  --succes-color: #76b767;
+}
+
+.theme_dark {
+  --background-main-gradient: linear-gradient(to right, rgba(27,16,53,1) 30%, rgba(100,145,115,1) 110%);
+  --background-element-gradient: linear-gradient(to right, rgba(215, 203, 157, 0.6) 0%, #1b1035 90%);
+  --background-color: #d7cb9d;
+  --default-color: #ffffff;
+  --primary-color: #1b1035;
+  --info-color: #689a74;
+  --succes-color: #76b767;
+}
 
 .page {
   margin: 0;
