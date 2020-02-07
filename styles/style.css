@@ -173,8 +173,9 @@ input[type="radio"].visually-hidden {
 @import url("https://fonts.googleapis.com/css?family=Quicksand&subset=latin&display=swap");
 
 :root {
-  --transition: 0.4s cubic-bezier(1, -1, 0, 2);
-  --mobile-width: 414px;
+  --transition-in: all 0.7s ease-out;
+  --transition-out: all 0.3s linear;
+  --mobile-width: 375px;
   --tablet-width: 768px;
   --desktop-width: 1024px;
   --header-height: 100px;
@@ -272,6 +273,7 @@ input[type="radio"].visually-hidden {
 }
 
 .meet {
+  position: relative;
   display: grid;
   grid-template-rows: 400px 100px 40px;
   grid-template-columns: 1fr;
@@ -282,7 +284,9 @@ input[type="radio"].visually-hidden {
 .meet__title {
   padding: 0 1rem;
   margin: 0;
-  font-size: 3.5rem;
+  font-size: 3rem;
+  line-height: 5rem;
+  text-align: center;
   place-self: center center;
 }
 
@@ -291,6 +295,18 @@ input[type="radio"].visually-hidden {
   font-size: 2rem;
   color: var(--danger-color);
   place-self: start center;
+  text-shadow: 0 0 10px #000000;
+  transition: var(--transition-out);
+}
+
+.meet__paragraph:hover {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 35px #000000, 0 0 40px var(--primary-color), 0 0 50px var(--primary-color), 0 0 75px var(--primary-color);
+  letter-spacing: 1px;
+  cursor: pointer;
+  filter: blur(4px) opacity(0) saturate(0.3);
+  transition: var(--transition-in);
 }
 
 .avatar__wrapper {
