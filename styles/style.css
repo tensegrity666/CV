@@ -196,7 +196,7 @@ input[type="radio"].visually-hidden {
   border-color: var(--background-color);
 }
 
-.theme_light {
+.theme-light {
   --background-main-gradient: linear-gradient(to right, #dbd5a4 30%, #649173 110%);
   --background-element-gradient: linear-gradient(to right, #1b1035 20%, rgba(118, 183, 103, 0.6) 55%, rgba(215, 203, 157, 0.9) 90%);
   --background-color: #1b1035;
@@ -206,7 +206,7 @@ input[type="radio"].visually-hidden {
   --succes-color: #76b767;
 }
 
-.theme_dark {
+.theme-dark {
   --background-main-gradient: linear-gradient(to right, #1b1035 30%, #649173 110%);
   --background-element-gradient: linear-gradient(to right, rgba(215, 203, 157, 0.6) 0%, #1b1035 90%);
   --background-color: #e4dbb6;
@@ -236,10 +236,6 @@ input[type="radio"].visually-hidden {
   border-radius: 20px;
   outline: 1px solid var(--primary-color);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.sticky-container {
-  width: 100vw;
 }
 
 .header {
@@ -274,6 +270,9 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: var(--mobile-width);
   margin: 0 auto;
 }
@@ -286,7 +285,7 @@ input[type="radio"].visually-hidden {
   min-height: 90vh;
 }
 
-.meet__title {
+.meet--title {
   padding: 0 1rem;
   margin: 0;
   font-size: 3rem;
@@ -295,7 +294,7 @@ input[type="radio"].visually-hidden {
   place-self: center center;
 }
 
-.meet__paragraph {
+.meet--paragraph {
   margin: 0;
   font-size: 2rem;
   color: var(--danger-color);
@@ -303,7 +302,7 @@ input[type="radio"].visually-hidden {
   transition: var(--transition-out);
 }
 
-.meet__paragraph:hover {
+.meet--paragraph:hover {
   font-size: 2.5rem;
   font-weight: bolder;
   text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 35px #000000, 0 0 40px var(--primary-color), 0 0 50px var(--primary-color), 0 0 75px var(--primary-color);
@@ -313,35 +312,39 @@ input[type="radio"].visually-hidden {
   transition: var(--transition-in);
 }
 
-.avatar__wrapper {
+.avatar--wrapper {
   filter: drop-shadow(10px 10px 25px rgba(0, 0, 0, 0.7));
   place-self: center center;
 }
 
-.avatar__photo {
+.avatar--photo {
   width: 300px;
   height: 300px;
   clip-path: circle(50% at 50% 50%);
 }
 
-.about {
-  min-height: 60vh;
-  margin: 0;
+.section {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 40vh;
+  margin: 0 5px;
   margin-bottom: var(--section-margin);
 }
 
-.about__title,
-.skills__title {
-  text-decoration: underline;
-  text-decoration-color: var(--warning-color);
+.title {
   padding: 0 0.5rem;
-  margin: 0;
+  margin: 0 auto;
   font-size: 2.5rem;
   line-height: 5rem;
-  text-align: start;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: var(--warning-color);
 }
 
-.about__paragraph {
+.about--paragraph {
   padding: 0 0.5rem;
   margin-bottom: 20px;
   font-size: 1.7rem;
@@ -350,13 +353,13 @@ input[type="radio"].visually-hidden {
 }
 
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 6.4rem;
   color: var(--default-color);
@@ -364,14 +367,14 @@ input[type="radio"].visually-hidden {
   backdrop-filter: blur(7px) opacity(0.5);
 }
 
-.footer__link {
+.footer--link {
   padding: 0 0 0 8rem;
   color: var(--default-color);
   text-decoration: none;
   cursor: pointer;
 }
 
-.contacts__link_twitter::before {
+.contacts--link-twitter::before {
   position: absolute;
   bottom: 1rem;
   left: 6rem;
@@ -386,7 +389,37 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-.footer__description {
+.footer--description {
   font-family: "Neucha", cursive;
   font-size: 2.5rem;
+}
+
+.soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  height: 70vh;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(7px) opacity(0.5);
+}
+
+.soon--text {
+  font-size: 3rem;
+  color: var(--danger-color);
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: var(--desktop-width);
+  }
+
+  .header {
+    height: 70px;
+  }
+
+  .footer {
+    display: none;
+  }
 }
