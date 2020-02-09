@@ -15,48 +15,52 @@
   <title>My Nice Portfolio</title>
 </head>
 <body class="page theme theme_light theme_dark">
-  <header class="header">
-    <a href="#" class="logo">Nice Portfolio</a>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item"><a href="#meet">Hello</a></li>
-        <li class="navigation__item"><a href="#about">About me</a></li>
-        <li class="navigation__item"><a href="#skills">Third</a></li>
-      </ul>
-    </nav>
-    <div class="toggler">
-      <span class="toggler__control"></span>
+  <main>
+    <div class="sticky-container">
+      <header class="header">
+        <a href="#" class="logo">Nice Portfolio</a>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#meet">Hello</a></li>
+            <li class="navigation__item"><a href="#about">About me</a></li>
+            <li class="navigation__item"><a href="#skills">Third</a></li>
+          </ul>
+        </nav>
+        <div class="toggler">
+          <span class="toggler__control"></span>
+        </div>
+      </header>
+      <h1 class="visually-hidden">Web-developer's personal portfolio</h1>
+      <section class="meet" id="meet">
+        <div class="avatar__wrapper">
+          <img class="avatar__photo" src="./assets/bearded-guy.png" alt="Pixel art happy bearded guy with arm raised" width="300" height="300">
+        </div>
+        <h2 class="meet__title">
+          Hey,<br>
+          my name is Roman
+        </h2>
+        <p class="meet__paragraph">
+          and i'm front-end developer
+        </p>
+      </section>
     </div>
-  </header>
-  <main class="container">
-    <h1 class="visually-hidden">Web-developer's personal portfolio</h1>
-    <section class="meet" id="meet">
-      <div class="avatar__wrapper">
-        <img class="avatar__photo" src="./img/pixel-bearded.jpg" alt="Pixel art happy bearded guy with arm raised" width="300" height="300">
-      </div>
-      <h2 class="meet__title">
-        Hey,<br>
-        my name is Roman
-      </h2>
-      <p class="meet__paragraph">
-        and i'm front-end developer
-      </p>
-    </section>
 
-    <section class="about" id="about">
-      <h2 class="about__title">Few words about me:</h2>
-      <p class="about__paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi assumenda ducimus minima voluptatum esse id doloremque sequi dolore quia. Ut voluptatibus, modi rem velit explicabo alias nobis neque autem dolor dolores saepe quia earum laborum, deleniti doloremque dicta? Nulla, illo labore!
-      </p>
-      <p class="about__paragraph">
-        These are <u>not all the things</u> that I could tell about myself.
-        You can read more about my professional skills below.
-      </p>
-    </section>
+    <div class="container">
+      <section class="about" id="about">
+        <h2 class="about__title">Few words about me:</h2>
+        <p class="about__paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi assumenda ducimus minima voluptatum esse id doloremque sequi dolore quia. Ut voluptatibus, modi rem velit explicabo alias nobis neque autem dolor dolores saepe quia earum laborum, deleniti doloremque dicta? Nulla, illo labore!
+        </p>
+        <p class="about__paragraph">
+          These are <u>not all the things</u> that I could tell about myself.
+          You can read more about my professional skills below.
+        </p>
+      </section>
 
-    <section class="skills" id="skills">
-      <h2 class="skills__title">My skills:</h2>
-    </section>
+      <section class="skills" id="skills">
+        <h2 class="skills__title">My skills:</h2>
+      </section>
+    </div>
   </main>
   <footer class="footer">
     <a class="footer__link contacts__link_twitter" href="https://twitter.com/tensegrity666" target="_blank" rel="noopener">

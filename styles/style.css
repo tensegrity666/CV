@@ -238,14 +238,19 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
+.sticky-container {
+  width: 100vw;
+}
+
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 1;
   display: grid;
   width: 100%;
   height: var(--header-height);
+  margin-bottom: var(--section-margin);
   color: var(--default-color);
   background: var(--background-color);
   background: var(--background-element-gradient);
@@ -279,7 +284,6 @@ input[type="radio"].visually-hidden {
   grid-template-rows: 400px 100px 40px;
   grid-template-columns: 1fr;
   min-height: 90vh;
-  padding-top: calc(var(--header-height) + 1rem);
 }
 
 .meet__title {
@@ -375,7 +379,7 @@ input[type="radio"].visually-hidden {
   width: 4rem;
   height: 4rem;
   content: "";
-  background-image: url("/img/twitter.png");
+  background-image: url("/assets/twitter.png");
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid var(--default-color);
