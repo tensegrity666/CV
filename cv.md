@@ -1,5 +1,8 @@
 # Roman Yakovlev
 
+## Current location
+Saint-Petersburg
+
 ## Contacts:
 * e-mail: tensegrity666@gmail.com
 * linkedin: https://www.linkedin.com/in/roman-yakovlev/
