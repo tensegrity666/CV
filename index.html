@@ -45,7 +45,7 @@
         <nav class="navigation">
           <ul class="navigation--list">
             <li class="navigation--item">
-              <a class="navigation--item-link" href="#meet">Hello</a>
+              <a class="navigation--item-link" href="#">Hello</a>
             </li>
             <li class="navigation--item">
               <a class="navigation--item-link" href="#about">About me</a>
@@ -61,12 +61,10 @@
             </li>
           </ul>
         </nav>
-        <div class="toggler">
-          <span class="toggler--control"></span>
-        </div>
+        <div class="toggler"></div>
       </header>
       <h1 class="visually-hidden">Web-developer's personal portfolio</h1>
-      <section class="meet" id="meet">
+      <section class="meet">
         <div class="avatar--wrapper">
           <img class="avatar--photo" src="./assets/bearded-guy.png" alt="Pixel art happy bearded guy with arm raised" width="300" height="300">
         </div>
@@ -96,22 +94,26 @@
         <h2 class="skills--title title">My skills</h2>
         <ul class="progress--area">
           <li class="progress--item">
-            <svg class="progress--item-svg">
+            <div class="progress--inner">HTML</div>
+            <svg class="progress--circle">
               <use class="progress" xlink:href="#progress--html"/>
             </svg>
           </li>
           <li class="progress--item">
-            <svg class="progress--item-svg">
+            <div class="progress--inner">CSS</div>
+            <svg class="progress--circle">
               <use class="progress" xlink:href="#progress--css"/>
             </svg>
           </li>
           <li class="progress--item">
-            <svg class="progress--item-svg">
+            <div class="progress--inner">JavaScript</div>
+            <svg class="progress--circle">
               <use class="progress" xlink:href="#progress--js"/>
             </svg>
           </li>
           <li class="progress--item">
-            <svg class="progress--item-svg">
+            <div class="progress--inner">SVG</div>
+            <svg class="progress--circle">
               <use class="progress" xlink:href="#progress--svg"/>
             </svg>
           </li>
@@ -124,6 +126,13 @@
           <span class="soon--text">coming soon...</span>
         </div>
       </section>
+
+      <section class="section" id="contacts">
+        <h2 class="title">Contact with me</h2>
+        <div class="soon">
+          <span class="soon--text">coming soon...</span>
+        </div>
+      </section>
     </div>
   </main>
   <footer class="footer">
@@ -131,5 +140,28 @@
       <span class="footer--description">&#10229; WЯIT3 Me PLES!</span>
     </a>
   </footer>
+
+  <script>
+    'Use strict';
+
+      window.onload = () => {
+
+        document.body.addEventListener('click', event => {
+          if (event.target.classList.contains('toggler')) {
+            event.target.classList.toggle('toggler-on');
+
+            const theme = document.querySelectorAll('.theme');
+            for (let i = 0; i < theme.length; ++i) {
+              if (theme[i].classList.contains('theme-light')) {
+                theme[i].classList.toggle('theme-dark')
+                theme[i].classList.add('theme-light')
+              } else {
+                theme[i].classList.toggle('theme-dark');
+              }
+            };
+          };
+        });
+      };
+  </script>
 </body>
 </html>
