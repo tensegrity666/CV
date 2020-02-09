@@ -15,6 +15,29 @@
   <title>My Nice Portfolio</title>
 </head>
 <body class="page theme theme-light theme-dark">
+
+  <svg class="visually-hidden">
+    <defs>
+      <circle class="progress--html" r="100" cx="120" cy="120" id="progress--html"/>
+      <circle class="progress--css" r="100" cx="120" cy="120" id="progress--css"/>
+      <circle class="progress--js" r="100" cx="120" cy="120" id="progress--js"/>
+      <circle class="progress--svg" r="100" cx="120" cy="120" id="progress--svg"/>
+    </defs>
+
+    <g>
+      <filter id="shadow" filterUnits="userSpaceOnUse" x="0" y="0" width="300" height="300">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+        <feOffset in="blur" dx="1" dy="3" result="offsetBlr"/>
+        <feFlood flood-color="rgba(0, 0, 0, 0.5)"/>
+        <feComposite operator="in" in2="offsetBlr" result="colBlur"/>
+        <feMerge>
+          <feMergeNode in="colBlur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </g>
+  </svg>
+
   <main>
     <div class="sticky-container">
       <header class="header">
@@ -47,7 +70,7 @@
 
     <div class="container">
       <section class="about section" id="about">
-        <h2 class="about--title title">Few words about me:</h2>
+        <h2 class="about--title title">Few words about me</h2>
         <p class="about--paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi assumenda ducimus minima voluptatum esse id doloremque sequi dolore quia. Ut voluptatibus, modi rem velit explicabo alias nobis neque autem dolor dolores saepe quia earum laborum, deleniti doloremque dicta? Nulla, illo labore!
         </p>
@@ -58,10 +81,32 @@
       </section>
 
       <section class="skills section" id="skills">
-        <h2 class="skills--title title">My skills:</h2>
+        <h2 class="skills--title title">My skills</h2>
+        <ul class="progress--area">
+          <li class="progress--item">
+            <svg class="progress--item-svg">
+              <use class="progress" xlink:href="#progress--html"/>
+            </svg>
+          </li>
+          <li class="progress--item">
+            <svg class="progress--item-svg">
+              <use class="progress" xlink:href="#progress--css"/>
+            </svg>
+          </li>
+          <li class="progress--item">
+            <svg class="progress--item-svg">
+              <use class="progress" xlink:href="#progress--js"/>
+            </svg>
+          </li>
+          <li class="progress--item">
+            <svg class="progress--item-svg">
+              <use class="progress" xlink:href="#progress--svg"/>
+            </svg>
+          </li>
+        </ul>
       </section>
 
-      <section class="projects section" id="">
+      <section class="projects section" id="projects">
         <h2 class="projects--title title">There are some of my projects</h2>
         <div class="soon">
           <span class="soon--text">coming soon...</span>

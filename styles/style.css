@@ -178,6 +178,7 @@ input[type="radio"].visually-hidden {
   --desktop-width: 1024px;
   --header-height: 100px;
   --section-margin: 5rem;
+  --circle-length: 630px;
 
   box-sizing: border-box;
   font-family: "Quicksand", system-ui, Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
@@ -330,12 +331,12 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 100%;
   min-height: 40vh;
-  margin: 0 5px;
+  margin: 0 1rem;
   margin-bottom: var(--section-margin);
 }
 
 .title {
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   margin: 0 auto;
   font-size: 2.5rem;
   line-height: 5rem;
@@ -408,6 +409,56 @@ input[type="radio"].visually-hidden {
 .soon--text {
   font-size: 3rem;
   color: var(--danger-color);
+}
+
+.progress--area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+}
+
+.progress--item {
+  list-style: none;
+}
+
+.progress--item-svg {
+  width: 240px;
+  height: 240px;
+}
+
+.progress {
+  cursor: pointer;
+  filter: url(#shadow);
+  fill: transparent;
+  stroke: var(--warning-color);
+  stroke-dasharray: var(--circle-length);
+  stroke-linecap: round;
+  stroke-width: 20;
+  transition: all 5s;
+}
+
+.progress--html {
+  stroke-dashoffset: calc(var(--circle-length) - (var(--circle-length) * 90) / 100);
+}
+
+.progress--css {
+  stroke-dashoffset: calc(var(--circle-length) - (var(--circle-length) * 80) / 100);
+}
+
+.progress--js {
+  stroke-dashoffset: calc(var(--circle-length) - (var(--circle-length) * 50) / 100);
+}
+
+.progress--svg {
+  stroke-dashoffset: calc(var(--circle-length) - ((var(--circle-length) * 25) / 100));
+}
+
+.progress:hover {
+  stroke: var(--danger-color);
+  stroke-dasharray: 0;
+  transition: all 5s ease-out;
 }
 
 @media (min-width: 1024px) {
