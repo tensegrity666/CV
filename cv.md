@@ -16,8 +16,8 @@ Saint-Petersburg
   * __BEM-methodology__ and also part of __BEM-stack__
   * CSS-preprocessors: __SASS__, __Post-CSS__
   * __SVG__
-  * CSS transitions, animations, filters
-  * UI/UX vision
+  * CSS __transitions__, __animations__, __filters__
+  * __UI/UX vision__
 * _a little bit_ of __React.JS__
 
 _and other technologies, methods and APIs used in frontend development_
