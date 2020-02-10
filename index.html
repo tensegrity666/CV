@@ -23,19 +23,6 @@
       <circle class="progress--js" r="100" cx="120" cy="120" id="progress--js"/>
       <circle class="progress--svg" r="100" cx="120" cy="120" id="progress--svg"/>
     </defs>
-
-    <g>
-      <filter id="shadow" filterUnits="userSpaceOnUse" x="0" y="0" width="300" height="300">
-        <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
-        <feOffset in="blur" dx="1" dy="3" result="offsetBlr"/>
-        <feFlood flood-color="rgba(0, 0, 0, 0.5)"/>
-        <feComposite operator="in" in2="offsetBlr" result="colBlur"/>
-        <feMerge>
-          <feMergeNode in="colBlur"/>
-          <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-      </filter>
-    </g>
   </svg>
 
   <main>
@@ -61,7 +48,7 @@
             </li>
           </ul>
         </nav>
-        <div class="toggler"></div>
+        <div class="toggler toggler-on"></div>
       </header>
       <h1 class="visually-hidden">Web-developer's personal portfolio</h1>
       <section class="meet">

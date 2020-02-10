@@ -246,6 +246,7 @@ input[type="radio"].visually-hidden {
   left: 0;
   z-index: 1;
   display: grid;
+  grid-template-columns: 70% 30%;
   width: 100%;
   min-height: var(--header-height);
   color: var(--default-color);
@@ -256,19 +257,20 @@ input[type="radio"].visually-hidden {
 }
 
 .toggler {
-  width: 70px;
-  height: 70px;
+  display: grid;
+  width: 72px;
+  height: 72px;
   margin: 1rem;
   cursor: pointer;
   background-color: var(--background-color);
-  border: 4px solid var(--background-color);
+  background-image: url("/assets/lnr-sun.svg");
+  filter: opacity(0.6);
+  background-repeat: no-repeat;
+  background-position: 18px 18px;
+  background-size: contain;
+  border: 2px solid var(--default-color);
   border-radius: 50%;
   place-self: center end;
-  transition: var(--transition-in);
-}
-
-.toggler:hover {
-  border-color: var(--danger-color);
   transition: var(--transition-in);
 }
 
@@ -276,6 +278,11 @@ input[type="radio"].visually-hidden {
 .toggler:active {
   background-color: var(--succes-color);
   border-color: var(--info-color);
+}
+
+.toggler-on {
+  background-image: url("/assets/lnr-moon.svg");
+  transition: var(--transition-in);
 }
 
 .logo {
@@ -456,29 +463,28 @@ input[type="radio"].visually-hidden {
 }
 
 .progress--inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  width: 100px;
-  height: 100px;
   top: calc(50% - 50px);
   left: calc(50% - 50px);
   z-index: -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
   font-size: 3rem;
 }
 
 .progress--circle {
   width: 240px;
   height: 240px;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.7));
 }
 
 .progress {
   cursor: pointer;
-  filter: url(#shadow);
   fill: transparent;
-  stroke: var(--warning-color);
   stroke-dasharray: var(--circle-length);
   stroke-linecap: round;
   stroke-width: 20;
@@ -486,18 +492,22 @@ input[type="radio"].visually-hidden {
 }
 
 .progress--html {
+  stroke: var(--succes-color);
   stroke-dashoffset: calc(var(--circle-length) - (var(--circle-length) * 90) / 100);
 }
 
 .progress--css {
+  stroke: var(--info-color);
   stroke-dashoffset: calc(var(--circle-length) - (var(--circle-length) * 80) / 100);
 }
 
 .progress--js {
+  stroke: var(--warning-color);
   stroke-dashoffset: calc(var(--circle-length) - (var(--circle-length) * 50) / 100);
 }
 
 .progress--svg {
+  stroke: var(--danger-color);
   stroke-dashoffset: calc(var(--circle-length) - ((var(--circle-length) * 25) / 100));
 }
 
@@ -550,32 +560,37 @@ input[type="radio"].visually-hidden {
     transition: var(--transition-in);
   }
 
-  .navigation--item:hover {
+  .navigation--item:hover,
+  .toggler:hover {
     transition: var(--transition-out);
     transform: scale(1.1, 1.1);
   }
 
   .navigation--item-link {
     display: block;
-    min-width: 150px;
+    min-width: 145px;
     padding: 1rem;
     font-size: 2.3rem;
     color: var(--primary-color);
-    filter: opacity(0.6);
-    background-color: var(--background-color);
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    background-color: var(--background-color);
+    filter: opacity(0.6);
     border: 2px solid var(--default-color);
     border-radius: 1rem;
+    outline: none;
     transition: var(--transition-in);
   }
 
-  .navigation--item-link:hover {
+  .navigation--item-link:hover,
+  .navigation--item-link:focus,
+  .toggler:hover,
+  .toggler:focus {
     filter: opacity(0.8);
     filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.7));
     border-color: var(--warning-color);
-    transition: var(--transition-out);
+    transition: var(--transition-in);
   }
 
   .meet {
@@ -601,5 +616,17 @@ input[type="radio"].visually-hidden {
 
   .footer {
     display: none;
+  }
+
+  .title {
+    padding: 0 1rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+  }
+
+  .about--paragraph {
+    font-size: 2.5rem;
+    line-height: 5rem;
   }
 }
