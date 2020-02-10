@@ -11,10 +11,13 @@ Saint-Petersburg
 ## Skills
 * __HTML/CSS/JavaScript__
   * __ES5__, __ES6__ (up to ES2019)
-  * Task-runners, bundlers: __Gulp__, __Parcel__, __Rollup__ (_moderate_), __Webpack__(_moderate_)
-  * CSS-preprocessors: __SASS__, __Post-CSS__
+  * Task-runners, bundlers: __Gulp__, __Parcel__, __Rollup__ (_moderate_), __Webpack__ (_moderate_)
   * __Git__ from terminal
   * __BEM-methodology__ and also part of __BEM-stack__
+  * CSS-preprocessors: __SASS__, __Post-CSS__
+  * __SVG__
+  * CSS transitions, animations, filters
+  * UI/UX vision
 * _a little bit_ of __React.JS__
 
 _and other technologies, methods and APIs used in frontend development_
