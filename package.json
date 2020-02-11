@@ -1,0 +1,25 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "https://tensegrity666.github.io/rsschool-cv/cv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tensegrity666/rsschool-cv.git"
+  },
+  "keywords": [],
+  "author": "Roman Yakovlev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tensegrity666/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/tensegrity666/rsschool-cv#readme",
+  "devDependencies": {
+    "stylelint": "^13.0.0",
+    "stylelint-config-recess-order": "^2.0.3",
+    "stylelint-config-standard": "^19.0.0"
+  }
+}

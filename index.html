@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Personal portfolio of web-developer">
+  <link href="./styles/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monoton&subset=latin&text=NicePortfolio&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&subset=latin&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Neucha&subset=latin&text=WЯIT3MePLES!&display=swap"
+    rel="stylesheet">
+  <title>My Nice Portfolio</title>
+</head>
+<body class="page theme theme-light theme-dark">
+
+  <svg class="visually-hidden">
+    <defs>
+      <circle class="progress--html" r="100" cx="120" cy="120" id="progress--html"/>
+      <circle class="progress--css" r="100" cx="120" cy="120" id="progress--css"/>
+      <circle class="progress--js" r="100" cx="120" cy="120" id="progress--js"/>
+      <circle class="progress--svg" r="100" cx="120" cy="120" id="progress--svg"/>
+    </defs>
+  </svg>
+
+  <main>
+    <div class="sticky-container">
+      <header class="header">
+        <a href="#" class="logo">Nice Portfolio</a>
+        <nav class="navigation">
+          <ul class="navigation--list">
+            <li class="navigation--item">
+              <a class="navigation--item-link" href="#">Hello</a>
+            </li>
+            <li class="navigation--item">
+              <a class="navigation--item-link" href="#about">About me</a>
+            </li>
+            <li class="navigation--item">
+              <a class="navigation--item-link" href="#skills">Skills</a>
+            </li>
+            <li class="navigation--item">
+              <a class="navigation--item-link" href="#projects">My projects</a>
+            </li>
+            <li class="navigation--item">
+              <a class="navigation--item-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="toggler toggler-on"></div>
+      </header>
+      <h1 class="visually-hidden">Web-developer's personal portfolio</h1>
+      <section class="meet">
+        <div class="avatar--wrapper">
+          <img class="avatar--photo" src="./assets/bearded-guy.png" alt="Pixel art happy bearded guy with arm raised" width="300" height="300">
+        </div>
+        <h2 class="meet--title">
+          Hey,<br>
+          my name is Roman
+        </h2>
+        <p class="meet--paragraph">
+          and i'm front-end developer
+        </p>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="about section" id="about">
+        <h2 class="about--title title">Few words about me</h2>
+        <p class="about--paragraph">
+          <h3 class="about--title title subtitle">Education</h3>
+          <ul class="about--paragraph">
+            <li>
+              For several years (since 2005 to 2008) I studied at St. Petersburg State
+              University of Mechanics and Optics (on Department of Computer Engineering), but
+              did not graduate.
+            </li>
+            <li>
+              Since 2019, I have been engaged in independent study of web development on
+              materials available on the Internet, and now I spend all my time on it.
+            </li>
+          </ul>
+          <h3 class="about--title title subtitle">Languages</h3>
+          <ul class="about--paragraph">
+            <li>English: pre-intermediate (but I'm improving it)</li>
+            <li>Native language is Russian.</li>
+          </ul>
+        </p>
+        <p class="about--paragraph">
+          These are <u>not all the things</u> that I could tell about myself.
+          You can read more about my professional skills below.
+        </p>
+      </section>
+
+      <section class="skills section" id="skills">
+        <h2 class="skills--title title">My skills</h2>
+        <ul class="progress--area">
+          <li class="progress--item">
+            <div class="progress--inner">HTML</div>
+            <svg class="progress--circle">
+              <use class="progress" xlink:href="#progress--html"/>
+            </svg>
+          </li>
+          <li class="progress--item">
+            <div class="progress--inner">CSS</div>
+            <svg class="progress--circle">
+              <use class="progress" xlink:href="#progress--css"/>
+            </svg>
+          </li>
+          <li class="progress--item">
+            <div class="progress--inner">JavaScript</div>
+            <svg class="progress--circle">
+              <use class="progress" xlink:href="#progress--js"/>
+            </svg>
+          </li>
+          <li class="progress--item">
+            <div class="progress--inner">SVG</div>
+            <svg class="progress--circle">
+              <use class="progress" xlink:href="#progress--svg"/>
+            </svg>
+          </li>
+        </ul>
+      </section>
+
+      <section class="projects section" id="projects">
+        <h2 class="projects--title title">There are some of my projects</h2>
+        <div class="soon">
+          <span class="soon--text">coming soon...</span>
+        </div>
+      </section>
+
+      <section class="section" id="contacts">
+        <h2 class="title">Contact with me</h2>
+          <ul class="contacts--paragraph">
+            <li class="navigation--item">
+              <a class="navigation--item-link" href="mailto:tensegrity666@gmail.com">E-mail</a>
+            </li>
+            <li class="navigation--item">
+              <a class="navigation--item-link" href="https://www.linkedin.com/in/roman-yakovlev/" target="_blank" rel="noopener noreferrer">linkedin</a>
+            </li>
+            <li class="navigation--item">
+              <a class="navigation--item-link" href="https://twitter.com/tensegrity666" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </li>
+          </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <a class="footer--link contacts--link-twitter" href="https://twitter.com/tensegrity666" target="_blank" rel="noopener">
+      <span class="footer--description">&#10229; WЯIT3 Me PLES!</span>
+    </a>
+  </footer>
+
+  <script>
+    'Use strict';
+
+      window.onload = () => {
+
+        document.body.addEventListener('click', event => {
+          if (event.target.classList.contains('toggler')) {
+            event.target.classList.toggle('toggler-on');
+
+            const theme = document.querySelectorAll('.theme');
+            for (let i = 0; i < theme.length; ++i) {
+              if (theme[i].classList.contains('theme-light')) {
+                theme[i].classList.toggle('theme-dark')
+                theme[i].classList.add('theme-light')
+              } else {
+                theme[i].classList.toggle('theme-dark');
+              }
+            };
+          };
+        });
+      };
+  </script>
+</body>
+</html>
