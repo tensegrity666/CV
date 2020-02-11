@@ -10,7 +10,3 @@ build/
 node_modules/
 npm-debug.*
 Thumbs.db
-
-# temporary ruleset
-*.json
-.stylelintignore
