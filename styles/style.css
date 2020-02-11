@@ -243,11 +243,11 @@ input[type="radio"].visually-hidden {
 .header {
   position: sticky;
   top: 0;
-  left: calc(50% - 512px);
+  left: 0;
   z-index: 1;
   display: grid;
   grid-template-columns: 70% 30%;
-  width: 1024px;
+  width: 100%;
   min-height: var(--header-height);
   color: var(--default-color);
   background: var(--background-color);
@@ -360,7 +360,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1024px;
+  max-width: var(--mobile-width);
   margin: 0 auto;
 }
 
@@ -416,9 +416,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  width: 1024px;
-
+  width: 100%;
   min-height: 40vh;
   margin: 0 1rem;
   margin-bottom: var(--section-margin);
@@ -461,14 +459,12 @@ input[type="radio"].visually-hidden {
 .footer {
   position: fixed;
   bottom: 0;
-
-  left: calc(50% - 512px);
-
+  left: 0;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1024px;
+  width: 100%;
   height: 6.4rem;
   color: var(--default-color);
   background-color: rgba(0, 0, 0, 0.3);
@@ -590,4 +586,65 @@ input[type="radio"].visually-hidden {
   stroke: var(--danger-color);
   stroke-dasharray: 0;
   transition: all 5s ease-out;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: var(--tablet-width);
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: var(--desktop-width);
+  }
+
+  .header {
+    position: fixed;
+    display: flex;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .navigation {
+    display: flex;
+  }
+  .meet {
+    margin-top: 20rem;
+  }
+
+  .meet--title {
+    padding: 0 1rem;
+    margin: 0;
+    font-size: 4.5rem;
+    line-height: 7rem;
+    text-align: center;
+    place-self: center center;
+  }
+
+  .progress--area {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .title {
+    padding: 0 1rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+  }
+
+  .about--paragraph {
+    font-size: 2.5rem;
+    line-height: 5rem;
+  }
 }
