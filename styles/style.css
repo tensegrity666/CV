@@ -263,7 +263,7 @@ input[type="radio"].visually-hidden {
   margin: 1rem;
   cursor: pointer;
   background-color: var(--background-color);
-  background-image: url("./assets/lnr-sun.svg");
+  background-image: url("../assets/lnr-sun.svg");
   filter: opacity(0.6);
   background-repeat: no-repeat;
   background-position: 18px 18px;
@@ -281,7 +281,7 @@ input[type="radio"].visually-hidden {
 }
 
 .toggler-on {
-  background-image: url("./assets/lnr-moon.svg");
+  background-image: url("../assets/lnr-moon.svg");
   transition: var(--transition-in);
 }
 
@@ -486,7 +486,7 @@ input[type="radio"].visually-hidden {
   width: 4rem;
   height: 4rem;
   content: "";
-  background-image: url("./assets/twitter.png");
+  background-image: url("../assets/twitter.png");
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid var(--default-color);
