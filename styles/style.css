@@ -268,7 +268,7 @@ input[type="radio"].visually-hidden {
   margin: 1rem;
   cursor: pointer;
   background-color: var(--background-color);
-  background-image: url("../assets/lnr-sun.svg");
+  background-image: url("/assets/lnr-sun.svg");
   filter: opacity(0.6);
   background-repeat: no-repeat;
   background-position: calc(var(--toggler-size) - 34px) calc(var(--toggler-size) - 34px);
@@ -280,7 +280,7 @@ input[type="radio"].visually-hidden {
 }
 
 .toggler-on {
-  background-image: url("../assets/lnr-moon.svg");
+  background-image: url("/assets/lnr-moon.svg");
   transition: var(--transition-in);
 }
 
