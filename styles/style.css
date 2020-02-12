@@ -4,6 +4,10 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   margin: 0.67rem 0;
   font-size: 2rem;
@@ -179,6 +183,7 @@ input[type="radio"].visually-hidden {
   --header-height: 100px;
   --section-margin: 5rem;
   --circle-length: 630px;
+  --toggler-size: 44px;
 
   box-sizing: border-box;
   font-family: "Quicksand", system-ui, Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
@@ -220,7 +225,6 @@ input[type="radio"].visually-hidden {
 
 .page {
   position: relative;
-  margin: 0;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -257,27 +261,22 @@ input[type="radio"].visually-hidden {
 }
 
 .toggler {
+  box-sizing: border-box;
   display: grid;
-  width: 72px;
-  height: 72px;
+  width: var(--toggler-size);
+  height: var(--toggler-size);
   margin: 1rem;
   cursor: pointer;
   background-color: var(--background-color);
   background-image: url("../assets/lnr-sun.svg");
   filter: opacity(0.6);
   background-repeat: no-repeat;
-  background-position: 18px 18px;
+  background-position: calc(var(--toggler-size) - 34px) calc(var(--toggler-size) - 34px);
   background-size: contain;
   border: 2px solid var(--default-color);
   border-radius: 50%;
   place-self: center end;
   transition: var(--transition-in);
-}
-
-.navigation--item-link:active,
-.toggler:active {
-  background-color: var(--succes-color);
-  border-color: var(--info-color);
 }
 
 .toggler-on {
@@ -316,7 +315,7 @@ input[type="radio"].visually-hidden {
 
 .navigation--item-link {
   display: block;
-  min-width: 145px;
+  min-width: 100px;
   padding: 1rem;
   font-size: 2.3rem;
   color: var(--primary-color);
@@ -341,6 +340,12 @@ input[type="radio"].visually-hidden {
   transition: var(--transition-in);
 }
 
+.navigation--item-link:active,
+.toggler:active {
+  background-color: var(--succes-color);
+  border-color: var(--info-color);
+}
+
 .logo {
   width: 70%;
   padding: 1rem;
@@ -350,10 +355,6 @@ input[type="radio"].visually-hidden {
   color: var(--default-color);
   text-decoration: none;
   place-self: center start;
-}
-
-.navigation {
-  display: none;
 }
 
 .container {
@@ -450,54 +451,6 @@ input[type="radio"].visually-hidden {
   text-align: justify;
 }
 
-.contacts--paragraph {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 6.4rem;
-  color: var(--default-color);
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(7px) opacity(0.5);
-}
-
-.footer--link {
-  padding: 0 0 0 8rem;
-  color: var(--default-color);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.contacts--link-twitter::before {
-  position: absolute;
-  bottom: 1rem;
-  left: 6rem;
-  display: block;
-  width: 4rem;
-  height: 4rem;
-  content: "";
-  background-image: url("../assets/twitter.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid var(--default-color);
-  border-radius: 50%;
-}
-
-.footer--description {
-  font-family: "Neucha", cursive;
-  font-size: 2.5rem;
-}
-
 .soon {
   display: flex;
   align-items: center;
@@ -588,9 +541,74 @@ input[type="radio"].visually-hidden {
   transition: all 5s ease-out;
 }
 
+.contacts--paragraph {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  width: 80%;
+  padding: 0;
+  margin: 0 auto;
+  row-gap: 10px;
+}
+
+.contacts--item {
+  place-self: center stretch;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: var(--tablet-width);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: var(--tablet-width);
+  }
+
+  .header {
+    position: fixed;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(5, 20%);
+    min-height: calc(var(--header-height) * 2);
+  }
+
+  .logo {
+    grid-row: 1;
+    grid-column: 2 / 5;
+    place-self: center center;
+  }
+
+  .toggler {
+    grid-row: 1;
+    grid-column: 5 / 6;
+    place-self: center center;
+  }
+
+  .navigation {
+    display: grid;
+    grid-row: 2;
+    grid-column: 1 / 6;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .navigation--list {
+    width: var(--tablet-width);
+  }
+
+  .navigation--item-link {
+    font-size: 2rem;
+  }
+
+  .sticky-container {
+    padding-top: 20rem;
+  }
+
+  .section {
+    margin-top: 10rem;
   }
 }
 
@@ -601,18 +619,31 @@ input[type="radio"].visually-hidden {
 
   .header {
     position: fixed;
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(10, 10%);
+    min-height: var(--header-height);
   }
 
   .logo {
-    width: 20%;
+    grid-row: 1;
+    grid-column: 1 / 3;
   }
 
   .navigation {
-    display: flex;
+    display: grid;
+    grid-row: 1;
+    grid-column: 2 / 10;
+    justify-content: center;
   }
-  .meet {
-    margin-top: 20rem;
+
+  .navigation--list {
+    justify-content: space-around;
+    width: var(--desktop-width);
+  }
+
+  .toggler {
+    grid-column: 10 / 11;
   }
 
   .meet--title {
@@ -646,5 +677,18 @@ input[type="radio"].visually-hidden {
   .about--paragraph {
     font-size: 2.5rem;
     line-height: 5rem;
+  }
+
+  .contacts--paragraph {
+    column-gap: 45px;
+  }
+
+  .navigation--item-link {
+    min-width: 145px;
+    font-size: 2.3rem;
+  }
+
+  .about {
+    margin-top: 18rem;
   }
 }
