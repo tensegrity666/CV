@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="Personal portfolio of web-developer">
-  <link href="./styles/style.css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Monoton&subset=latin&text=NicePortfolio&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand&subset=latin&display=swap" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css?family=Neucha&subset=latin&text=WЯIT3MePLES!&display=swap"
-    rel="stylesheet">
+  <link rel="shortcut icon" href="assets/favicon.ico" sizes="16x16 32x32"
+    type="image/x-icon">
   <title>My Nice Portfolio</title>
 </head>
 <body class="page theme theme-light theme-dark">
@@ -53,7 +52,7 @@
       <h1 class="visually-hidden">Web-developer's personal portfolio</h1>
       <section class="meet">
         <div class="avatar--wrapper">
-          <img class="avatar--photo" src="./assets/bearded-guy.png" alt="Pixel art happy bearded guy with arm raised" width="300" height="300">
+          <img class="avatar--photo" src="assets/bearded-guy.png" alt="Pixel art happy bearded guy with arm raised" width="300" height="300">
         </div>
         <h2 class="meet--title">
           Hey,<br>
@@ -150,13 +149,10 @@
       </section>
     </div>
   </main>
-  <footer></footer>
-
   <script>
     'Use strict';
 
-      window.onload = () => {
-
+      (() => {
         document.body.addEventListener('click', event => {
           if (event.target.classList.contains('toggler')) {
             event.target.classList.toggle('toggler-on');
@@ -172,7 +168,8 @@
             };
           };
         });
-      };
+      })();
+
   </script>
 </body>
 </html>
