@@ -17,10 +17,12 @@ Saint-Petersburg
   * CSS-preprocessors: __SASS__, __Post-CSS__
   * __SVG__
   * CSS __transitions__, __animations__, __filters__
+  * __Flexbox__, __Grd layout__
   * __UI/UX vision__
 * _a little bit_ of __React.JS__
+* __CI/CD__ (_basics_)
 
-_and other technologies, methods and APIs used in frontend development_
+_and some other technologies, methods and APIs used in frontend development_
 
 ## Education
 For several years (since 2005 to 2008) I studied at __St. Petersburg State University of Mechanics and Optics__ (on Department of Computer Engineering), but did not graduate.
