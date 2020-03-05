@@ -33,7 +33,7 @@ Since 2019, I have been engaged in independent study of web development on mater
 and now I spend all my time on it.
 
 ## Languages
-__English__: _pre-intermediate_ (but I'm improving it)
+__English__: _pre-intermediate / B1_ (but I'm improving it)
 
 _native language is Russian._
 
