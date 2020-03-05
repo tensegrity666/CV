@@ -12,12 +12,12 @@ Saint-Petersburg
 * __HTML/CSS/JavaScript__
   * __ES5__, __ES6__ (up to ES2019)
   * __BEM-methodology__ and also part of __BEM-stack__
+  * Basics of __OOP__ and __Design Patterns__
   * __SVG__
   * CSS __transitions__, __animations__, __filters__ etc.
   * __Flexbox__, __Grd layout__
 * __UI/UX__ vision
-* _a little bit_ of __React.JS__
-* __CI/CD__ (_basics_)
+
 
 #### Tools
 * Task-runners, bundlers: __Gulp__, __Parcel__, __Rollup__ (_moderate_), __Webpack__ (_moderate_)
