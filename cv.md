@@ -12,11 +12,12 @@ Saint-Petersburg
 * __HTML/CSS/JavaScript__
   * __ES5__, __ES6__ (up to ES2019)
   * __BEM-methodology__ and also part of __BEM-stack__
-  * Basics of __OOP__ and __Design Patterns__
+  * _Basics_ of __OOP__ and __Design Patterns__
   * __SVG__
   * CSS __transitions__, __animations__, __filters__ etc.
   * __Flexbox__, __Grd layout__
 * __UI/UX__ vision
+* __A11Y__
 
 
 #### Tools
