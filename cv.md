@@ -12,7 +12,7 @@ Saint-Petersburg
 
 ## Skills
 * __HTML/CSS/JavaScript__
-  * __ES5__, __ES6__ (up to ES.Next(ES2019+))
+  * __ES5__, __ES6__ (up to __ES.Next/ES2019+__)
   * __BEM-methodology__ and also part of __BEM-stack__
   * _Basics_ of __OOP__ and __Design Patterns__
   * __SVG__
