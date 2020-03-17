@@ -28,6 +28,7 @@ Saint-Petersburg
 * __Stylelint__, __ESLint__, __Prettier__
 
 _and some other technologies, methods, tools and APIs used in frontend development_
+[You can look my professional roadmap here](https://coggle.it/diagram/XlF8mYXWyjqVKh0D/t/web-dev-roadmap/830b7b3b7a40c41873cb64df860a05e3cf0806a8947c4134c4686a86149f0071)
 
 ## Education
 For several years (since 2005 to 2008) I studied at __St. Petersburg State University of Mechanics and Optics__ (on Department of Computer Engineering), but did not graduate.
