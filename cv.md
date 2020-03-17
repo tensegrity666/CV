@@ -10,7 +10,7 @@ Saint-Petersburg
 
 ## Skills
 * __HTML/CSS/JavaScript__
-  * __ES5__, __ES6__ (up to ES2019)
+  * __ES5__, __ES6__ (up to ES.Next(ES2019+))
   * __BEM-methodology__ and also part of __BEM-stack__
   * _Basics_ of __OOP__ and __Design Patterns__
   * __SVG__
@@ -25,6 +25,7 @@ Saint-Petersburg
 * __Git__ from terminal
 * __Node Package Manager__
 * CSS-preprocessors: __SASS__, __Post-CSS__
+* __Stylelint__, __ESLint__, __Prettier__
 
 _and some other technologies, methods, tools and APIs used in frontend development_
 
