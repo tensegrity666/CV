@@ -4,9 +4,11 @@
 Saint-Petersburg
 
 ## Contacts:
-* e-mail: tensegrity666@gmail.com
-* linkedin: https://www.linkedin.com/in/roman-yakovlev/
+* E-mail: tensegrity666@gmail.com
+* Linkedin: https://www.linkedin.com/in/roman-yakovlev/
 * Twitter: https://twitter.com/tensegrity666
+
+[Resume at resume.io](https://resume.io/r/F2iD3PJS3)
 
 ## Skills
 * __HTML/CSS/JavaScript__
