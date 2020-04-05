@@ -41,5 +41,7 @@ and now I spend all my time on it.
 ## Languages
 __English__: _pre-intermediate / B1_ (but I'm improving it)
 
-_native language is Russian._
+_Native language is Russian._
 
+## Relocate
+_Ready to relocate_
