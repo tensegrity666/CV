@@ -27,6 +27,7 @@ Saint-Petersburg
 * __Node Package Manager__
 * CSS-preprocessors: __SASS__, __Post-CSS__
 * __Stylelint__, __ESLint__, __Prettier__
+* __bash commands__
 
 _and some other technologies, methods, tools and APIs used in frontend development_
 
