@@ -28,8 +28,9 @@ Saint-Petersburg
 * __Node Package Manager__
 * CSS-preprocessors: __SASS__, __Post-CSS__
 * __Stylelint__, __ESLint__, __Prettier__
-* __bash commands__
+* __bash commands__ (because i use Linux)
 * I use Google __Lighthouse__ and __[WebPageTest](https://www.webpagetest.org/)__ metrics to monitor __performance__ and page __loading speed__
+* __Adobe Photoshop__ (for processing photos and for working with layouts), __Avocode__, __Figma__
 
 _and some other technologies, methods, tools and APIs used in frontend development_
 
