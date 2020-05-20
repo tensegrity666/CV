@@ -29,6 +29,7 @@ Saint-Petersburg
 * CSS-preprocessors: __SASS__, __Post-CSS__
 * __Stylelint__, __ESLint__, __Prettier__
 * __bash commands__
+* I use Google __Lighthouse__ and __[WebPageTest](https://www.webpagetest.org/)__ metrics to monitor __performance__ and page __loading speed__
 
 _and some other technologies, methods, tools and APIs used in frontend development_
 
