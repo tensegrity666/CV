@@ -32,6 +32,10 @@ Saint-Petersburg
 * I use Google __Lighthouse__ and __[WebPageTest](https://www.webpagetest.org/)__ metrics to monitor __performance__ and page __loading speed__
 * __Adobe Photoshop__ (for processing photos and for working with layouts), __Avocode__, __Figma__
 
+#### Time management / Task boards
+* __JIRA__ (basic knowledge of agile)
+* __Trello__
+
 _and some other technologies, methods, tools and APIs used in frontend development_
 
 [You can look my professional roadmap here](https://coggle.it/diagram/XlF8mYXWyjqVKh0D/t/web-dev-roadmap/830b7b3b7a40c41873cb64df860a05e3cf0806a8947c4134c4686a86149f0071)
