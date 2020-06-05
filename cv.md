@@ -15,24 +15,27 @@ Saint-Petersburg
   * _Basics_ of __OOP__ and __Design Patterns__
   * __Architectural approach to development__ (I usually use __MVP__ in my projects)
 
-  * __CSS-modules__ via Webpack
   * __BEM-methodology__
   * __SVG__
   * CSS __transitions__, __animations__, __filters__ etc.
   * __Flexbox__, __Grid layout__
 * __UI/UX__ vision
 * __A11Y__
-* _Basics_ of __CI/CD__
 
 
 #### Tools
 * Task-runners, bundlers: __Gulp__, __Parcel__, __Rollup__, __Webpack__ (also I can write a config for Webpack, and I like to do it)
-* __Git__ from terminal
-* __Node Package Manager__
 * CSS-preprocessors: __SASS__, __Post-CSS__
 * __Stylelint__, __ESLint__, __Prettier__
+* __CSS-modules__ via Webpack
+
+* __Git__ from terminal
+* __Node Package Manager__
+* _Basics_ of __CI/CD__ (via TravisCI)
 * __bash commands__ (because i use Linux)
+
 * I use Google __Lighthouse__ and __[WebPageTest](https://www.webpagetest.org/)__ metrics to monitor __performance__ and page __loading speed__
+
 * __Adobe Photoshop__ (for processing photos and for working with layouts), __Avocode__, __Figma__
 
 #### Time management / Task boards
