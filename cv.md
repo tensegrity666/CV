@@ -1,7 +1,7 @@
 # Roman Yakovlev
 
 ## Current location
-Saint-Petersburg
+Saint-Petersburg, Russia
 
 ## Contacts:
 * E-mail: tensegrity666@gmail.com
