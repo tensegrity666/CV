@@ -8,6 +8,8 @@ Saint-Petersburg, Russia
 * Linkedin: https://www.linkedin.com/in/roman-yakovlev/
 
 [Resume at resume.io](https://resume.io/r/F2iD3PJS3)
+____________________________________________________________________________________________________________________________________
+
 
 ## Skills
 * __HTML/CSS/JavaScript__
@@ -15,13 +17,14 @@ Saint-Petersburg, Russia
   * _Basics_ of __OOP__ and __Design Patterns__
   * __Architectural approach to development__ (I usually use __MVP__ in my projects)
 
+  * __WebGL__ (via __Phaser__ framework)
   * __BEM-methodology__
   * __SVG__
   * CSS __transitions__, __animations__, __filters__ etc.
   * __Flexbox__, __Grid layout__
 * __UI/UX__ vision
 * __A11Y__
-
+____________________________________________________________________________________________________________________________________
 
 #### Tools
 * Task-runners, bundlers: __Gulp__, __Parcel__, __Rollup__, __Webpack__ (also I can write a config for Webpack, and I like to do it)
@@ -37,6 +40,7 @@ Saint-Petersburg, Russia
 * I use Google __Lighthouse__ and __[WebPageTest](https://www.webpagetest.org/)__ metrics to monitor __performance__ and page __loading speed__
 
 * __Adobe Photoshop__ (for processing photos and for working with layouts), __Avocode__, __Figma__
+____________________________________________________________________________________________________________________________________
 
 #### Time management / Task boards
 * __JIRA__ (basic knowledge of agile)
@@ -45,17 +49,22 @@ Saint-Petersburg, Russia
 _and some other technologies, methods, tools and APIs used in frontend development_
 
 [You can look my professional roadmap here](https://coggle.it/diagram/XlF8mYXWyjqVKh0D/t/web-dev-roadmap/830b7b3b7a40c41873cb64df860a05e3cf0806a8947c4134c4686a86149f0071)
+____________________________________________________________________________________________________________________________________
 
 ## Education
-For several years (since 2005 to 2008) I studied at __St. Petersburg State University of Mechanics and Optics__ (on Department of Computer Engineering), but did not graduate.
+* For several years (since 2005 to 2008) I studied at __St. Petersburg State University of Mechanics and Optics__ (on Department of Computer Engineering), but did not graduate.
 
-Since 2019, I have been engaged in independent study of web development on materials available on the Internet, 
+* Since 2019, I have been engaged in independent study of web development on materials available on the Internet, 
 and now I spend all my time on it.
+
+* Since 2020, February I studing at RollingScopesSchool.
+____________________________________________________________________________________________________________________________________
 
 ## Languages
 __English__: _pre-intermediate / B1_ (but I'm improving it)
 
 _Native language is Russian._
+____________________________________________________________________________________________________________________________________
 
 ## Relocate
 _Ready to relocate_
