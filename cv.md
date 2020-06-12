@@ -30,6 +30,7 @@ ________________________________________________________________________________
 * Task-runners, bundlers: __Gulp__, __Parcel__, __Rollup__, __Webpack__ (also I can write a config for Webpack, and I like to do it)
 * CSS-preprocessors: __SASS__, __Post-CSS__
 * __Stylelint__, __ESLint__, __Prettier__
+* __Babel__
 * __CSS-modules__ via Webpack
 
 * __Git__ from terminal
