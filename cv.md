@@ -54,8 +54,9 @@ ________________________________________________________________________________
 
 ## Education
 * For several years (since 2005 to 2008) I studied at __St. Petersburg State University of Mechanics and Optics__ (on Department of Computer Engineering), but did not graduate.
+[Certificate](./assets/certificate.pdf)
 
-* Since 2019, I have been engaged in independent study of web development on materials available on the Internet, 
+* Since 2019, I have been engaged in independent study of web development on materials available on the Internet,
 and now I spend all my time on it.
 
 * Since 2020, February I studing at RollingScopesSchool.
