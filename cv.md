@@ -12,16 +12,17 @@ Saint-Petersburg, Russia
 
 
 ## Skills
-* __HTML/CSS/JavaScript__
-  * __ES5__, __ES6__ (up to __ES.Next__/__ES2019+__)
+* __JavaScript__
+  * __ES5__, __ES6__ (up to latest __ES.Next__)
   * _Basics_ of __OOP__ and __Design Patterns__
-  * __Architectural approach to development__ (I usually use __MVP__ in my projects)
+  * _Basics_ of __Architectural approach to development__ 
 
-  * __WebGL__ (via __Phaser__ framework)
+* __HTML/CSS
   * __BEM-methodology__
   * __SVG__
   * CSS __transitions__, __animations__, __filters__ etc.
   * __Flexbox__, __Grid layout__
+
 * __UI/UX__ vision
 * __A11Y__
 
