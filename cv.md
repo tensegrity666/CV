@@ -67,7 +67,7 @@ and now I spend all my time on it.
 
 
 ## Languages
-__English__: _pre-intermediate / B1_ (but I'm improving it)
+__English__: _pre-intermediate / A2_ (but I'm improving it)
 
 _Native language is Russian._
 
