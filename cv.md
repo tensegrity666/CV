@@ -17,7 +17,7 @@ Saint-Petersburg, Russia
   * _Basics_ of __OOP__ and __Design Patterns__
   * _Basics_ of __Architectural approach to development__ 
 
-* __HTML/CSS
+* __HTML/CSS__
   * __BEM-methodology__
   * __SVG__
   * CSS __transitions__, __animations__, __filters__ etc.
