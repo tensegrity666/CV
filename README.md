@@ -1,1 +1,1 @@
-https://tensegrity666.github.io/rsschool-cv/cv
+https://tensegrity666.github.io/CV/
