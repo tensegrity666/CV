@@ -40,7 +40,7 @@ Saint-Petersburg, Russia
 * __Git__ from terminal
 * __Node Package Manager__
 * _Basics_ of __CI/CD__ (via TravisCI, GH Actions)
-* __bash commands__ (because i use Linux)
+* Some __bash commands__ (because i use Linux)
 
 * I use Google __Lighthouse__ and __[WebPageTest](https://www.webpagetest.org/)__ metrics to monitor __performance__ and page __loading speed__
 
