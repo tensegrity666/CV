@@ -13,6 +13,7 @@ Saint-Petersburg, Russia
 
 ## Skills
 * __JavaScript__
+  * __React__ + __Redux__
   * __ES5__, __ES6__ (up to latest __ES.Next__)
   * _Basics_ of __OOP__ and __Design Patterns__
   * _Basics_ of __Architectural approach to development__ 
@@ -21,8 +22,7 @@ Saint-Petersburg, Russia
   * __Semantics__
   * __Pixel perfect__
   * __BEM-methodology__
-  * __SVG__
-  * CSS __transitions__, __animations__, __filters__ etc.
+  * CSS __transitions__, __animations__, __filters__, __SVG__ etc.
   * __Flexbox__, __Grid layout__
 
 * __UI/UX__ vision
