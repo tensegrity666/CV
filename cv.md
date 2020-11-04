@@ -11,12 +11,15 @@ Saint-Petersburg, Russia
 
 
 
-## Skills
+## Skills (technologies, frameworks, other "hard"-skills)
 * __JavaScript__
-  * __React__ + __Redux__
-  * __ES5__, __ES6__ (up to latest __ES.Next__)
+  * __React__ (with hooks) + __Redux__
+  * __ES5__, __ES6__/__ES.Next__  (I follow the latest language features)
   * _Basics_ of __OOP__ and __Design Patterns__
   * _Basics_ of __Architectural approach to development__ 
+  * __NodeJS__
+    * __ExpressJS__
+    * _Basics_ of __REST-API__
 
 * __HTML/CSS__
   * __Semantics__
@@ -30,17 +33,18 @@ Saint-Petersburg, Russia
 
 
 #### Tools
-* Task-runners, bundlers: __Gulp__, __Parcel__, __Rollup__, __Webpack__ (also I can write a config for Webpack, and I like to do it)
-* __Docker__
+* Task-runners, bundlers: __Gulp__, _Parcel_, _Rollup_, __Webpack__
+* __Docker__ (_moderate_)
 * CSS-preprocessors: __SASS__, __Post-CSS__
-* __Stylelint__, __ESLint__, __Prettier__
+* _Stylelint_, _ESLint_, _Prettier_, _Husky_, _Commitlint_
 * __Babel__
-* __CSS-modules__ via Webpack
+* __CSS-modules__
 
 * __Git__ from terminal
 * __Node Package Manager__
 * _Basics_ of __CI/CD__ (via TravisCI, GH Actions)
 * Some __bash commands__ (because i use Linux)
+* __Postman__
 
 * I use Google __Lighthouse__ and __[WebPageTest](https://www.webpagetest.org/)__ metrics to monitor __performance__ and page __loading speed__
 
@@ -51,10 +55,14 @@ Saint-Petersburg, Russia
 * __JIRA__ (basic knowledge of agile)
 * __Trello__
 
+#### Team work skills
+Experience of teamwork in couple of Rolling Scopes School training projects as a tech-leader.
+
 _and some other technologies, methods, tools and APIs used in frontend development_
 
 [You can look my professional roadmap here](https://coggle.it/diagram/XlF8mYXWyjqVKh0D/t/web-dev-roadmap/830b7b3b7a40c41873cb64df860a05e3cf0806a8947c4134c4686a86149f0071)
 
+- - -
 
 ## Education
 * For several years (since 2005 to 2008) I studied at __St. Petersburg State University of Mechanics and Optics__ (on Department of Computer Engineering), but did not graduate.
